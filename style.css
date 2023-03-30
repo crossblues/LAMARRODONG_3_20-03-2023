@@ -1,5 +1,10 @@
 
 
+:root {
+	--purple: #9356DC;
+	--pink: #FF79DA ;
+	--teal:#99E2D0;
+  }
 
 		body {
 			font-family: 'Roboto', sans-serif;
