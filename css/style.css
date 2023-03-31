@@ -387,7 +387,7 @@ h4 {
 }
 .menubox_item p, .menubox_item h4 {
   margin-left: 10px;
-  line-height: 0.7;
+  line-height: 0.5;
 }
 .menubox_item p {
   color: rgb(88, 88, 88);
@@ -427,7 +427,7 @@ h4 {
 .heart-icon2 {
   position: absolute;
   top: 30px;
-  right: 20px;
+  right: 60px;
   font-size: 1.5rem;
   color: #131316;
   cursor: pointer;
