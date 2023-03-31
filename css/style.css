@@ -1,4 +1,4 @@
-* {
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -22,11 +22,14 @@ h4 {
   font-family: "Roboto", sans-serif;
   color: #3b3b3b;
   background-color: #e0e0e0;
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
   width: 100%;
   text-align: center;
   box-shadow: inset 0px 6px 5px 0px rgba(170, 170, 170, 0.75);
   margin-bottom: 0px;
+}
+.header-subtext i {
+  margin-right: 10px;
 }
 
 .nav-text {
@@ -35,6 +38,9 @@ h4 {
 }
 .nav-text h1 {
   font-weight: 800;
+}
+.nav-text p {
+  font-size: large;
 }
 
 .nav {
@@ -51,7 +57,7 @@ h4 {
   text-align: center;
   padding: 15px 20px 15px 20px;
   border: none;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 4px rgba(145, 145, 145, 0.25);
   transition: all 0.2s ease-in-out;
   border-radius: 30px;
   text-decoration: none;
@@ -86,6 +92,9 @@ h4 {
 .instructions__box h4 {
   margin-left: 30px;
 }
+.instructions h1 {
+  margin-left: 7.5%;
+}
 
 .aside_button {
   background-color: #f2f2f2;
@@ -95,7 +104,7 @@ h4 {
   font-size: 16px;
   padding: 10px 0px 10px 0px;
   position: relative;
-  text-align: center;
+  text-align: left;
   transition: background-color 0.3s ease-in-out;
   width: 85%;
   margin-left: auto;
@@ -107,6 +116,8 @@ h4 {
   border-radius: 50%;
   content: "1";
   display: block;
+  text-align: center;
+  line-height: 30px;
   height: 30px;
   left: -10px;
   position: absolute;
@@ -122,6 +133,12 @@ h4 {
 .aside_button:hover {
   background-color: #bba4d8;
 }
+.aside_button h3 {
+  margin-left: 50px;
+}
+.aside_button i {
+  margin-right: 20px;
+}
 
 .aside_button_2 {
   background-color: #f2f2f2;
@@ -131,7 +148,7 @@ h4 {
   font-size: 16px;
   padding: 10px 0px 10px 0px;
   position: relative;
-  text-align: center;
+  text-align: left;
   transition: background-color 0.3s ease-in-out;
   width: 85%;
   margin-left: auto;
@@ -142,7 +159,9 @@ h4 {
   background-color: #9356DC;
   border-radius: 50%;
   content: "2";
+  text-align: center;
   display: block;
+  line-height: 30px;
   height: 30px;
   left: -10px;
   position: absolute;
@@ -158,6 +177,12 @@ h4 {
 .aside_button_2:hover {
   background-color: #bba4d8;
 }
+.aside_button_2 h3 {
+  margin-left: 50px;
+}
+.aside_button_2 i {
+  margin-right: 20px;
+}
 
 .aside_button_3 {
   background-color: #f2f2f2;
@@ -167,7 +192,7 @@ h4 {
   font-size: 16px;
   padding: 10px 0px 10px 0px;
   position: relative;
-  text-align: center;
+  text-align: left;
   transition: background-color 0.3s ease-in-out;
   width: 85%;
   margin-left: auto;
@@ -178,7 +203,9 @@ h4 {
   background-color: #9356DC;
   border-radius: 50%;
   content: "3";
+  text-align: center;
   display: block;
+  line-height: 30px;
   height: 30px;
   left: -10px;
   position: absolute;
@@ -194,13 +221,19 @@ h4 {
 .aside_button_3:hover {
   background-color: #bba4d8;
 }
+.aside_button_3 h3 {
+  margin-left: 50px;
+}
+.aside_button_3 i {
+  margin-right: 20px;
+}
 
 .restaurants {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #eeeeee;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .restaurants__cards {
   box-shadow: 0 4px 8px 0 rgba(138, 138, 138, 0.5);
@@ -213,6 +246,8 @@ h4 {
   margin-top: 20px;
   line-height: 0.3;
   position: relative;
+  text-decoration: none;
+  color: black;
 }
 .restaurants__cards img {
   width: 100%;
@@ -223,6 +258,25 @@ h4 {
 .restaurants__cards p, .restaurants__cards h4 {
   padding-left: 20px;
   padding-right: 30px;
+}
+.restaurants__cards:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25);
+}
+.restaurants h1 {
+  margin-left: 7.5%;
+}
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99E2D0;
+  color: rgb(2, 138, 81);
+  font-size: 0.8rem;
+  padding: 10px 15px 10px 15px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 .heart-icon {
@@ -243,6 +297,7 @@ h4 {
 }
 
 .footer {
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -260,6 +315,10 @@ h4 {
 }
 .footer ul li {
   margin: 10px;
+}
+.footer_title {
+  line-height: 2;
+  font-family: "Shrikhand", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,10 +5,14 @@ $background: #eeeeee;
 $background2: rgb(44, 44, 44);
 $background3: #ffffff;
 $button-hover-color: #bba4d8;
+$button-bg-color: #f2f2f2;
+$button-border-radius: 50px;
+$button-shadow-color: rgba(0, 0, 0, 0.1);
 $footerbg: rgb(226, 226, 226);
 
 
-* {
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 h4 {
@@ -37,16 +41,19 @@ h4 {
  
 
 
-
+ 
     .header-subtext{
         font-family: 'Roboto', sans-serif;
         color: #3b3b3b;
         background-color: #e0e0e0;
-        padding: 20px;
+        padding: 20px 0px 20px 0px;
         width: 100%;
         text-align: center;
         box-shadow: inset 0px 6px 5px 0px rgba(170, 170, 170, 0.75);
         margin-bottom: 0px;
+        i {
+            margin-right: 10px;
+        }
     }
 
 
@@ -59,6 +66,9 @@ h4 {
     line-height: 2;
     h1 {
         font-weight: 800;
+    }
+    p {
+        font-size: large;
     }
 }
 
@@ -75,7 +85,7 @@ h4 {
     text-align: center;
     padding: 15px 20px 15px 20px;
     border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 4px rgba(145, 145, 145, 0.25);
     transition: all 0.2s ease-in-out;
     border-radius: 30px;
     text-decoration: none;
@@ -119,14 +129,12 @@ h4 {
         &__box {
             @include instruct-box;
         }
+    h1 {
+        margin-left: 7.5%;
+    }
 
 }
 
-$button-bg-color: #f2f2f2;
-$button-border-radius: 50px;
-$button-shadow-color: rgba(0, 0, 0, 0.1);
-
-$button-number-color: #9356DC;
 
 .aside_button {
   background-color: $button-bg-color;
@@ -136,7 +144,7 @@ $button-number-color: #9356DC;
   font-size: 16px;
   padding: 10px 0px 10px 0px;
   position: relative;
-  text-align: center;
+  text-align: left;
   transition: background-color 0.3s ease-in-out;
   width: 85%;
   margin-left: auto;
@@ -148,6 +156,8 @@ $button-number-color: #9356DC;
     border-radius: 50%;
     content: "1";
     display: block;
+    text-align: center;
+    line-height: 30px;
     height: 30px;
     left: -10px;
     position: absolute;
@@ -164,6 +174,14 @@ $button-number-color: #9356DC;
   &:hover {
     background-color: $button-hover-color;
   }
+
+  h3 {
+    margin-left: 50px;
+  }
+
+  i {
+    margin-right: 20px;
+}
 }
 
 .aside_button_2 {
@@ -174,7 +192,7 @@ $button-number-color: #9356DC;
     font-size: 16px;
     padding: 10px 0px 10px 0px;
     position: relative;
-    text-align: center;
+    text-align: left;
     transition: background-color 0.3s ease-in-out;
     width: 85%;
     margin-left: auto;
@@ -185,7 +203,9 @@ $button-number-color: #9356DC;
       background-color: $primary;
       border-radius: 50%;
       content: "2";
+      text-align: center;
       display: block;
+      line-height: 30px;
       height: 30px;
       left: -10px;
       position: absolute;
@@ -201,6 +221,14 @@ $button-number-color: #9356DC;
   
     &:hover {
       background-color: $button-hover-color;
+    }
+
+    h3 {
+        margin-left: 50px;
+      }
+
+      i {
+        margin-right: 20px;
     }
   }
   
@@ -212,7 +240,7 @@ $button-number-color: #9356DC;
     font-size: 16px;
     padding: 10px 0px 10px 0px;
     position: relative;
-    text-align: center;
+    text-align:left;
     transition: background-color 0.3s ease-in-out;
     width: 85%;
     margin-left: auto;
@@ -223,7 +251,9 @@ $button-number-color: #9356DC;
       background-color: $primary;
       border-radius: 50%;
       content: "3";
+      text-align: center;
       display: block;
+      line-height: 30px;
       height: 30px;
       left: -10px;
       position: absolute;
@@ -240,6 +270,14 @@ $button-number-color: #9356DC;
     &:hover {
       background-color: $button-hover-color;
     }
+
+    h3 {
+        margin-left: 50px;
+      }
+    
+    i {
+        margin-right: 20px;
+    }
   }
 
 
@@ -249,7 +287,7 @@ $button-number-color: #9356DC;
     flex-direction: column;
     width: 100%;
     background-color: $background;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 @mixin restaurant-card {
@@ -263,6 +301,8 @@ $button-number-color: #9356DC;
     margin-top: 20px;
     line-height: 0.3;
     position: relative;
+    text-decoration: none;
+    color: black;
         img {
             width: 100%;
             height: 180px;
@@ -273,7 +313,10 @@ $button-number-color: #9356DC;
             padding-left: 20px;
             padding-right: 30px;
         }
-
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25);
+        }
 }       
 
 
@@ -283,8 +326,24 @@ $button-number-color: #9356DC;
             @include restaurant-card;
                 
         }
+    h1 {
+        margin-left: 7.5%;
+        
+    }
 }
-    
+
+.new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #99E2D0;
+    color: rgb(2, 138, 81);
+    font-size: 0.8rem;
+    padding: 10px 15px 10px 15px;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+
 .heart-icon {
     position: absolute;
     bottom: 30px;
@@ -304,6 +363,7 @@ $button-number-color: #9356DC;
 //FOOTER
 
 .footer {
+    font-family: 'Roboto', sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -322,6 +382,10 @@ $button-number-color: #9356DC;
                  }
 
         }
+    &_title {
+        line-height: 2;
+        font-family: 'Shrikhand', cursive;
+    }
 }
 
         
