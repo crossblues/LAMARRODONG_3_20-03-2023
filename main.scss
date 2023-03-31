@@ -297,7 +297,7 @@ h4 {
     background-color: $background;
     padding-bottom: 20px;
 }
-
+//even though some of the mixins aren't fully in use if i remove them it explodes
 @mixin restaurant-card {
     box-shadow: 0 4px 8px 0 rgba(138, 138, 138, 0.5);
     border-radius: 20px;
