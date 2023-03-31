@@ -362,6 +362,7 @@ h4 {
   margin-left: 7.5%;
   font-weight: lighter;
   margin-top: 30px;
+  color: black;
   text-decoration: underline #99E2D0;
   text-decoration-thickness: 3px;
 }
@@ -384,6 +385,15 @@ h4 {
   box-shadow: 0 4px 8px 0 rgba(138, 138, 138, 0.5);
   padding: 5px 0px 5px 0px;
   margin-top: 20px;
+  text-decoration: none;
+}
+.menubox_item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  background-color: #9356DC, 30%;
+}
+.menubox_itemactive {
+  text-decoration: none;
 }
 .menubox_item p, .menubox_item h4 {
   margin-left: 10px;
@@ -391,6 +401,9 @@ h4 {
 }
 .menubox_item p {
   color: rgb(88, 88, 88);
+}
+.menubox_item h4 {
+  color: black;
 }
 
 .order-button {
@@ -439,6 +452,30 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+div {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+div {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
