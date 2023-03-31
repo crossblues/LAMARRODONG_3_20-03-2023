@@ -1,3 +1,11 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -328,6 +336,109 @@ h4 {
   .restaurants_cards img {
     height: 250px;
   }
+}
+.topimg {
+  margin-top: 20px;
+  width: 100%;
+  object-fit: cover;
+  height: 450px;
+  position: relative;
+}
+
+.menubox {
+  width: 100%;
+  background-color: #eeeeee;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -50px;
+}
+.menubox_title {
+  margin-left: 7.5%;
+  padding-top: 40px;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+}
+.menubox_header {
+  margin-left: 7.5%;
+  font-weight: lighter;
+  margin-top: 30px;
+  text-decoration: underline #99E2D0;
+  text-decoration-thickness: 3px;
+}
+.menubox_header h3 {
+  padding-bottom: 30px;
+}
+.menubox_price {
+  text-align: right;
+  float: right;
+  margin-right: 20px;
+  color: rgb(88, 88, 88);
+}
+.menubox_item {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(138, 138, 138, 0.5);
+  padding: 5px 0px 5px 0px;
+  margin-top: 20px;
+}
+.menubox_item p, .menubox_item h4 {
+  margin-left: 10px;
+  line-height: 0.7;
+}
+.menubox_item p {
+  color: rgb(88, 88, 88);
+}
+
+.order-button {
+  display: inline-block;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 75px 15px 75px;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(145, 145, 145, 0.25);
+  transition: all 0.2s ease-in-out;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "Roboto" sans-serif;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.menu_container_for_dummies {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  min-height: 100vh;
+  position: absolute;
+  top: 400px;
+  width: 100%;
+}
+
+.heart-icon2 {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #131316;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.heart-icon2:hover {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
