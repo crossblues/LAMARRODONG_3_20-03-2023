@@ -478,4 +478,33 @@ div {
   animation-fill-mode: forwards;
 }
 
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+  position: relative;
+}
+
+.tick-icon {
+  color: green;
+  font-size: 1.5rem;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  right: -25px;
+}
+
+.circle:hover {
+  background-color: green;
+}
+
+.circle:hover .tick-icon {
+  transform: rotate(180deg);
+}
+
 /*# sourceMappingURL=style.css.map */
