@@ -2,6 +2,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
+h4 {
+  font-weight: 800;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -10,30 +14,22 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .header img {
-  width: 200px;
-}
-
-.header-box-border {
-  box-shadow: 0px 5px 5px rgb(90, 90, 90);
-  margin-bottom: 1px;
-  width: 100%;
+  width: 170px;
+  margin-top: 10px;
 }
 
 .header-subtext {
   font-family: "Roboto", sans-serif;
   color: #3b3b3b;
   background-color: #e0e0e0;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  box-shadow: inset 0px 6px 5px 0px rgba(170, 170, 170, 0.75);
 }
 
-.book {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.nav-text {
+  text-align: center;
 }
 
 .instructions {
@@ -63,26 +59,46 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   width: 100%;
   background-color: #eeeeee;
+  padding-bottom: 40px;
 }
 .restaurants__cards {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
+  border-radius: 20px;
   height: 50%;
   background-color: white;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  line-height: 0.5;
+  line-height: 0.3;
+  position: relative;
 }
 .restaurants__cards img {
   width: 100%;
   height: 180px;
-  border-radius: 30px 30px 0 0;
+  border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
 .restaurants__cards p, .restaurants__cards h4 {
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.heart-icon {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.heart-icon:hover {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
@@ -94,9 +110,9 @@ p, h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   width: 100%;
   background-color: #000000;
-  color: rgb(226, 226, 226);
+  color: rgb(255, 255, 255);
   text-align: start;
-  line-height: 2;
+  line-height: 1.5;
 }
 .footer ul {
   list-style: none;
