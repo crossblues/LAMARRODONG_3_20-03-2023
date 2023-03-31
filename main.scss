@@ -398,15 +398,19 @@ h4 {
 
 //tablet adjustments
 
-@media screen and (max-width: 1024px){
-    .restaurants_cards {
-        height: 70%;
-        img {
-            height: 250px;
-        }
+
+@media only screen and (min-width: 992px) {
+
+    
+
+    .restaurants__cards img {
+      height: 500px;
     }
 
-}
+
+   
+
+  }
 
 //restaurant pages
 
